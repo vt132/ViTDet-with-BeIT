@@ -1,5 +1,5 @@
 _base_ = [
-    './lsj_100e_coco_instance_r1024.py'
+    './lsj_100e_coco_instance_r768.py'
 ]
 
 norm_cfg = dict(type='LN', requires_grad=True)

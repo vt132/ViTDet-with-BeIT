@@ -4,7 +4,7 @@ dataset_type = 'CocoDataset'
 data_root = 'data/coco/'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
-image_size = (1024, 1024)
+image_size = (768, 768)
 
 file_client_args = dict(backend='disk')
 # comment out the code below to use different file client
@@ -41,13 +41,13 @@ test_pipeline = [
     dict(type='LoadImageFromFile', file_client_args=file_client_args),
     dict(
         type='MultiScaleFlipAug',
-        img_scale=(1024, 1024),
+        img_scale=(768, 768),
         flip=False,
         transforms=[
             dict(type='Resize', keep_ratio=True),
             dict(type='RandomFlip'),
             dict(type='Normalize', **img_norm_cfg),
-            dict(type='Pad', size_divisor=1024),
+            dict(type='Pad', size_divisor=768),
             dict(type='ImageToTensor', keys=['img']),
             dict(type='Collect', keys=['img']),
         ])
