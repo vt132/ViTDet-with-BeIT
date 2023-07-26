@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from .beit import BEiT3BaseBackbone
 from .csp_darknet import CSPDarknet
 from .darknet import Darknet
 from .detectors_resnet import DetectoRS_ResNet
@@ -24,5 +25,5 @@ __all__ = [
     'MobileNetV2', 'Res2Net', 'HourglassNet', 'DetectoRS_ResNet',
     'DetectoRS_ResNeXt', 'Darknet', 'ResNeSt', 'TridentResNet', 'CSPDarknet',
     'SwinTransformer', 'PyramidVisionTransformer', 'PyramidVisionTransformerV2',
-    'ViT', 'ViTAE', 'ViTAE_S'
+    'ViT', 'ViTAE', 'ViTAE_S', 'BEiT3BaseBackbone',
 ]

@@ -16,7 +16,7 @@ Collections:
     README: configs/queryinst/README.md
     Code:
       URL: https://github.com/open-mmlab/mmdetection/blob/master/mmdet/models/detectors/queryinst.py
-      Version: v2.18.0
+      Version: v2.28.2
 
 Models:
   - Name: queryinst_r50_fpn_1x_coco
